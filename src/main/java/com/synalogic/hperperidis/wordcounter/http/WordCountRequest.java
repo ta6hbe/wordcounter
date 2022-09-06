@@ -38,5 +38,5 @@ public class WordCountRequest {
 
     @JsonProperty
     private String text;
-    
+
 }
