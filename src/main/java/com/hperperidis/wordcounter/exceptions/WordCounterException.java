@@ -1,4 +1,4 @@
-package com.synalogic.hperperidis.wordcounter.exceptions;
+package com.hperperidis.wordcounter.exceptions;
 
 public class WordCounterException extends RuntimeException {
 

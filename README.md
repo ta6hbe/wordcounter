@@ -9,7 +9,7 @@ REST API publishing two HTTP POST endpoints.
 - /count/text
 - /count/file
 
-This can be downloaded from my Github repo here.
+This can be downloaded from my Github repo [here](https://github.com/ta6hbe/wordcounter).
 
 I have made an effort to make the endpoints and services as efficient as possible, by 
 using NON Blocking IO for File and HTTP download operations.
@@ -102,7 +102,7 @@ The Rest controller endpoints delegate the request processing and production of
 relevant response to the `BookService`.
 
 This is responsible for parsing the body of the request into a  
-{@link com.synalogic.hperperidis.wordcounter.model.TextBook} instance, 
+{@link TextBook} instance, 
 which will contain either the raw text passed in, or the text contents of the 
 content that was downloaded from the URL or the Multipart file uploaded.
 

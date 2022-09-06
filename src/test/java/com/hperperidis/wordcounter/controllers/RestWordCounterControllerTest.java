@@ -1,13 +1,13 @@
-package com.synalogic.hperperidis.wordcounter.controllers;
+package com.hperperidis.wordcounter.controllers;
 
 import java.io.File;
 import java.util.AbstractMap;
 import java.util.Collections;
 import java.util.concurrent.CompletableFuture;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.synalogic.hperperidis.wordcounter.http.WordCountRequest;
-import com.synalogic.hperperidis.wordcounter.model.TextBook;
-import com.synalogic.hperperidis.wordcounter.services.BookService;
+import com.hperperidis.wordcounter.model.TextBook;
+import com.hperperidis.wordcounter.services.BookService;
+import com.hperperidis.wordcounter.http.WordCountRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -47,8 +47,7 @@ class RestWordCounterControllerTest {
     @InjectMocks
     ObjectMapper objectMapper;
 
-    @Mock
-    BookService bookService;
+    @Mock BookService bookService;
 
 
     TextBook problemDefinitionTextBook;

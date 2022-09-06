@@ -8,7 +8,7 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.synalogic.hperperidis</groupId>
+	<groupId>com.hperperidis</groupId>
 	<artifactId>wordcounter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>wordcounter</name>

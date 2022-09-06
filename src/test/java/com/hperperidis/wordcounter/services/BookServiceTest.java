@@ -1,4 +1,4 @@
-package com.synalogic.hperperidis.wordcounter.services;
+package com.hperperidis.wordcounter.services;
 
 import java.io.File;
 import java.net.http.HttpConnectTimeoutException;
@@ -6,8 +6,8 @@ import java.text.DecimalFormat;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-import com.synalogic.hperperidis.wordcounter.http.WordCountRequest;
-import com.synalogic.hperperidis.wordcounter.model.TextBook;
+import com.hperperidis.wordcounter.model.TextBook;
+import com.hperperidis.wordcounter.http.WordCountRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

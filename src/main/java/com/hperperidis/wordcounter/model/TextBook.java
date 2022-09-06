@@ -1,4 +1,4 @@
-package com.synalogic.hperperidis.wordcounter.model;
+package com.hperperidis.wordcounter.model;
 
 import java.util.List;
 import java.util.Map;

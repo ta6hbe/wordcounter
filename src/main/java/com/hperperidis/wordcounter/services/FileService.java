@@ -1,4 +1,4 @@
-package com.synalogic.hperperidis.wordcounter.services;
+package com.hperperidis.wordcounter.services;
 
 import java.io.*;
 import java.net.URL;
@@ -12,9 +12,8 @@ import java.nio.file.StandardCopyOption;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
-import com.synalogic.hperperidis.wordcounter.exceptions.WordCounterException;
+import com.hperperidis.wordcounter.exceptions.WordCounterException;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;

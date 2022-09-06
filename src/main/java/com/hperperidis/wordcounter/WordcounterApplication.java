@@ -1,4 +1,4 @@
-package com.synalogic.hperperidis.wordcounter;
+package com.hperperidis.wordcounter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

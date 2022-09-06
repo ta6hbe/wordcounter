@@ -1,10 +1,10 @@
-package com.synalogic.hperperidis.wordcounter.controllers;
+package com.hperperidis.wordcounter.controllers;
 
 import java.util.concurrent.CompletableFuture;
 
-import com.synalogic.hperperidis.wordcounter.http.WordCountRequest;
-import com.synalogic.hperperidis.wordcounter.model.TextBook;
-import com.synalogic.hperperidis.wordcounter.services.BookService;
+import com.hperperidis.wordcounter.model.TextBook;
+import com.hperperidis.wordcounter.services.BookService;
+import com.hperperidis.wordcounter.http.WordCountRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

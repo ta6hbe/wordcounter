@@ -1,4 +1,4 @@
-package com.synalogic.hperperidis.wordcounter.http;
+package com.hperperidis.wordcounter.http;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

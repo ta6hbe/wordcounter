@@ -1,4 +1,4 @@
-package com.synalogic.hperperidis.wordcounter.services;
+package com.hperperidis.wordcounter.services;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import java.util.TreeMap;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
-import com.synalogic.hperperidis.wordcounter.http.WordCountRequest;
-import com.synalogic.hperperidis.wordcounter.model.TextBook;
+import com.hperperidis.wordcounter.model.TextBook;
+import com.hperperidis.wordcounter.http.WordCountRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
