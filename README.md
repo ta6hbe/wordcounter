@@ -37,10 +37,10 @@ Future improvements may include (but not limited to):
 - [How to launch ](#how-to-launch)
 - [Conclusion](#conclusion)
 
-
 ---------------
 
 # API:
+
 ### /count/text:
 
 REST endpoint for receiving JSON POST requests with either a:
@@ -153,8 +153,8 @@ DELIMITER, then the character "I" is a single word, preceded AND followed by two
 
 ## How to launch
 
-I have added a `Dockerfile allong with a `docker-compose.yml` configuration, to build a fully self
-contained image and launch locally on a computer with Docker installed. 
+I have added a `Dockerfile` along with a `docker-compose.yml` configuration, to build a fully self-contained 
+image and launch locally on a computer with Docker installed. 
 
 If that is not feasible, fear not!. 
 
@@ -193,6 +193,7 @@ Your service should be up and running directly on your localhost on port 8080.
 
 On your browser navigate to https://localhost:8080 and you should see an error page with the content as follows.
 No worries. Our service is up and running. It is just not listening for GET HTTP requests.
+
 ```
 Whitelabel Error Page
 This application has no explicit mapping for /error, so you are seeing this as a fallback.
@@ -204,7 +205,7 @@ There was an unexpected error (type=Not Found, status=404).
 
 To get to this stage, the Maven Wrapper has run all the unit tests and they should have already passed.
 
-You can start testing the service by sending POST Http request, as per the docs above. You can either use the curl command snippets
+You can start testing the service by sending POST Http requests, as per the docs above. You can either use the curl command snippets
 included above as a guide, or use Postman. For ease of use I have exported a Postman Collection Json file and included with this 
 project under the folder `postman`.
 
@@ -214,25 +215,26 @@ Happy testing.
 
 ### Using Docker compose
 
-With docker compose, the service will bind to port 9090 on the localhost, by default, by virtue of the `.env` file.
+With `docker-compose`, the service will bind to port 9090 on the localhost, by default, by virtue of the `.env` file included.
 If that port is available on the local host, simply run:
 
 ```
 docker-compose up --build
 ```
 
-This will build the container image, run all the unit tests befaur launching the service inside the container.
-You need Docker installed and running on the host computer for this. You also need port 9090 avaialble.
+This will build the container image, run all the unit tests before launching the service inside the container.
+You need Docker installed and running on the host computer for this. You also need port 9090 available.
 
 Alternatively you can define your own local port binding on the fly by using:
+
 ```
 WORDCOUNTER_PORT=<You Port Choice here> docker-compose up --build
 ```
 
-This way the local port will bind to whatever you passed in the WORDCOUNTER_PORT command line argument.
+This way the local port will bind to whatever value you passed in the WORDCOUNTER_PORT command line argument, if the port is available.
 
 To run HTTP POST requests against the service, you can still use the Postman collection included, making sure 
-to change the URL port to whatever port you have launched to.
+to change the **URL port** to whatever port you have launched to.
 
 Also make sure you provide your own file examples. I have included some text files for proof of concept, available in 
 folder `src/test/resources`.
