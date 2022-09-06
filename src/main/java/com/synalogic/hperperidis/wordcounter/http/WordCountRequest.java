@@ -38,14 +38,5 @@ public class WordCountRequest {
 
     @JsonProperty
     private String text;
-
-    private MultipartFile file;
-
-    private String fileName;
-
-    private String fileType;
-
-    private String size;
-
-
+    
 }

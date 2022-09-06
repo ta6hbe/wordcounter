@@ -9,7 +9,6 @@ import java.util.TreeMap;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
-import com.synalogic.hperperidis.wordcounter.http.FileService;
 import com.synalogic.hperperidis.wordcounter.http.WordCountRequest;
 import com.synalogic.hperperidis.wordcounter.model.TextBook;
 import lombok.extern.slf4j.Slf4j;

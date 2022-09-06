@@ -1,4 +1,4 @@
-package com.synalogic.hperperidis.wordcounter.http;
+package com.synalogic.hperperidis.wordcounter.services;
 
 import java.io.*;
 import java.net.URL;
