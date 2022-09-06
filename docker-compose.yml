@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  word-counter-service:
+    container_name: harrys_wordcounter
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: harrys_wordcounter:latest
+    ports:
+      - ${WORDCOUNTER_PORT:-8080}:8080
+
+
